@@ -1,0 +1,2 @@
+Bugs Encountered: 
+1. Pictures are not displaying on the Create Post page. 
