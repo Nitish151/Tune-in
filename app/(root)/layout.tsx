@@ -3,6 +3,8 @@ import LeftSidebar from "@/components/LeftSidebar";
 import Image from "next/image";
 import MobileNav from "@/components/MobileNav";
 import { Toaster } from "@/components/ui/toaster";
+import PodcastPlayer from "@/components/PodcastPlayer";
+import { SignedIn } from "@clerk/nextjs";
 
 export default function RootLayout({
   children,
@@ -29,6 +31,9 @@ export default function RootLayout({
 
         <RightSidebar />
       </main>
+      <SignedIn>
+        <PodcastPlayer />
+      </SignedIn>
     </div>
   );
 }
